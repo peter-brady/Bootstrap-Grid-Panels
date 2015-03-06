@@ -1,0 +1,136 @@
+<?php
+
+/**
+ * Author: P.Brady - 14/9/2014
+ */
+
+/**
+ * @file
+ * Definition of the 'bootstrap_grid_panels' page manager plugin.
+ *
+ * Enables Bootstrap 3 column classes to be attached to 
+ * regions and panes in Panels.
+ *
+ * Supports:
+ *
+ *  - col-xs-*, col-sm-*, col-md-*, col-lg-*
+ *  - col-xs-offset-*, col-md-offset-*, col-md-offset-*, col-lg-offset-*
+ *  - col-xs-push-*, col-md-push-*, col-md-push-*, col-lg-push-*
+ *  - col-xs-pull-*, col-md-pull-*, col-md-pull-*, col-lg-pull-*
+ *  - hidden-xs, hidden-sm, hidden-md, hidden-lg
+ *  
+ * Also supports sections (regions) as Bootstrap containers or
+ * full width.
+ *
+ * Default Bootstrap container:
+ * ----------------------------
+ * <section>                       <-- Full width section (add custom classes below)
+ *   <div class="container">       <-- Default section container (add custom classes below)
+ *     <div class="row">           <-- Row to hold columns IE. Panels panes (add custom classes below)
+ *       <?php print $panes ?>     <-- Panels panes with responsive column settings
+ *     </div>
+ *   </div>    
+ * </section>
+ *
+ * Full width section:
+ * -------------------
+ * <section>                   <-- Full-width section (add custom classes below)
+ *   <?php print $panes ?>     <-- Components as Fieldable Panels Panes
+ * </section>
+ * 
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function bootstrap_grid_panels_ctools_plugin_directory($owner, $plugin_type) {
+
+  // Register our plugins directory with cTools
+  // so panels can pick up our .inc files
+  if ($owner == 'panels') {
+    return "plugins/$plugin_type";
+  }
+
+}
+
+/**
+ * Implements hook_theme().
+ *
+ * Enables the 'pane_settings_form' to be rendered
+ * by our custom template file.
+ * 
+ * We theme the form with expandable sections and with 
+ * the breakpoint select dropdowns spanning four columns.
+ *
+ * Just presents a better UI in the CMS for page builders.
+ * 
+ */
+function bootstrap_grid_panels_theme($existing, $type, $theme, $path){
+
+  return array(
+    'pane__settings_form' => array(
+      'render element' => 'form',
+      'template' => 'pane--settings-form',
+      'path' => drupal_get_path('module', 'bootstrap_grid_panels') . '/plugins/styles/pane',
+    ),
+  );
+
+}
+
+/**
+ * Implement function hook_form_BASE_FORM_ID_alter
+ *
+ * Panels module comes with a set of default style implementations. These display in the
+ * region and pane style settings.
+ * 
+ * But we want only our own region styles to display in the Panels region 
+ * and pane style list.
+ *
+ * We simply unset the default region and pane style settings here.
+ * 
+ * Doing this prevents a developer from creating pages with regions or 
+ * panes that don't adhere to our responsive grid.
+ * 
+ */
+function bootstrap_grid_panels_form_panels_edit_style_type_form_alter(&$form, &$form_state, $form_id) {
+
+  // Define an array of option keys to unset.
+  $remove_options = array(
+    // These cover those default styles provided by
+    // Panels module that we want to remove.
+    '-1',
+    'default_style',
+    'list',
+    'naked',
+    'rounded_corners',
+    'block',
+    );
+
+  // Unset unrequired options from the form
+  foreach($remove_options as $remove_option) {
+    unset($form['style']['#options'][$remove_option]);
+  }
+
+}
+
+/**
+ * Implements hook_panels_new_pane_alter.
+ * 
+ * Alter new panes to set default pane style settings
+ */
+function bootstrap_grid_panels_panels_new_pane_alter(&$pane) {
+  $pane->style['style'] = 'pane';
+  $pane->style['settings'] = array(
+    'use_columns' => 1,
+    'columns' => array(
+      'xs' => 'col_xs_12',
+      'sm' => 'inherit',
+      'md' => 'inherit',
+      'lg' => 'inherit',
+    ),
+    'use_offset' => 0,
+    'use_push' => 0,
+    'use_pull' => 0,
+    'use_visibility' => 0,
+  );
+}

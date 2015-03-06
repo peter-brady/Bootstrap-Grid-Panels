@@ -1,0 +1,8 @@
+name = Bootstrap Grid Panels
+description = Provides mobile-first, responsive grid framework (Bootstrap 3) grid functionality in Panels.
+core = 7.x
+package = Other
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = panels
+version = 7.x-0.01

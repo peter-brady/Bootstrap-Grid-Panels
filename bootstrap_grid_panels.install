@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * Author: P.Brady
+ */
+
+/**
+ * @file
+ * Implements install and uninstall hooks for Bootstrap Grid Panels module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function bootstrap_grid_panels_install() {
+
+  // Set panel style extra classes
+  variable_set('panel_style_extra_classes', array("_none"=>'None'));
+
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function bootstrap_grid_panels_uninstall() {
+
+  // Delete panel style extra classes
+  variable_del('panel_style_extra_classes');
+
+}
