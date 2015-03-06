@@ -11,6 +11,9 @@ Supports:
  
 ## Columns
 
+![pane-style-settings-1](https://cloud.githubusercontent.com/assets/2240510/6538025/83c6e0c6-c454-11e4-83a7-f11417465d52.png)
+
+
 ## Using Offset
 
 Move this pane to the right using .col-(xs/sm/md/lg)-offset-\* classes.
@@ -61,8 +64,6 @@ Note: Visibility classes do not inherit up. If you set a pane to be hidden on th
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#responsive-utilities) on  **Responsive Utilities** for more information.
 
-![pane-style-settings-1](https://cloud.githubusercontent.com/assets/2240510/6538025/83c6e0c6-c454-11e4-83a7-f11417465d52.png)
-
 
 Default Bootstrap container:
 ----------------------------
@@ -75,6 +76,8 @@ Default Bootstrap container:
   </div>    
 </section>
 ```
+![section-style-settings-default](https://cloud.githubusercontent.com/assets/2240510/6538008/5247ad3c-c454-11e4-9859-7a8390d836e3.png)
+
 
 Full width section:
 -------------------
