@@ -40,7 +40,26 @@ See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-column-order
 
 ## Using Pull
 
+Move this pane to the left using the css property: right:
+
+This class increase the right css propery of a pane by \* columns. For example, .col-md-pull-4 will move this pane left by four columns on the medium and large breakpoints.
+
+Note:
+
+- Pull **inherits up to larger breakpoints** unless you specify otherwise.
+- A pull **will not pull panes** that follow it in the same section.
+
+See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-column-ordering) on **Pull**  for more information.
+
 ## Using Visibility
+
+Although this functionality should be used sparingly, you can **hide a pane** on individual breakpoints.
+
+The Bootstrap term for this functionality is **Responsive Utilities**.
+
+Note: Visibility classes do not inherit up. If you set a pane to be hidden on the xs breakpoint for example, it will still appear on the other breakpoints. And vice-versa.
+
+See the [Bootstrap documentation](http://getbootstrap.com/css/#responsive-utilities) on  **Responsive Utilities** for more information.
 
 Also supports sections (regions) as Bootstrap containers or just full width sections.
 
