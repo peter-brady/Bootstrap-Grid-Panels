@@ -64,6 +64,9 @@ Note: Visibility classes do not inherit up. If you set a pane to be hidden on th
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#responsive-utilities) on  **Responsive Utilities** for more information.
 
+![pane-style-settings-2](https://cloud.githubusercontent.com/assets/2240510/6538031/9ca33d6a-c454-11e4-9bb1-13b38ec28235.png)
+
+
 
 Default Bootstrap container:
 ----------------------------
