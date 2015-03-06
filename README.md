@@ -61,7 +61,6 @@ Note: Visibility classes do not inherit up. If you set a pane to be hidden on th
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#responsive-utilities) on  **Responsive Utilities** for more information.
 
-Also supports sections (regions) as Bootstrap containers or just full width sections.
 
 Default Bootstrap container:
 ----------------------------
