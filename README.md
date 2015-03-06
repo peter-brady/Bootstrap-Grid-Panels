@@ -28,6 +28,8 @@ Note:
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-offsetting) on *Offset* for more information.
 
+![pane-style-settings-3](https://cloud.githubusercontent.com/assets/2240510/6538109/a1c72d0a-c455-11e4-8021-de2cb2428251.png)
+
 ## Using Push
 
 Move this pane to the right using the css property: left:
@@ -41,6 +43,9 @@ Note:
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-column-ordering) on **Push** for more information.
 
+![pane-style-settings-4](https://cloud.githubusercontent.com/assets/2240510/6538110/a1cd9622-c455-11e4-9ed2-1e216435df26.png)
+
+
 ## Using Pull
 
 Move this pane to the left using the css property: right:
@@ -53,6 +58,9 @@ Note:
 - A pull **will not pull panes** that follow it in the same section.
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-column-ordering) on **Pull**  for more information.
+
+![pane-style-settings-5](https://cloud.githubusercontent.com/assets/2240510/6538112/a1debaf6-c455-11e4-9e0a-064c8ddeee84.png)
+
 
 ## Using Visibility
 
