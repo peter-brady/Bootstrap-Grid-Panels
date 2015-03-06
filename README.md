@@ -86,6 +86,8 @@ Full width section:
   <?php print $panes ?>     <-- Components as Fieldable Panels Panes
 </section>
 ```
+![section-style-settings-full-width](https://cloud.githubusercontent.com/assets/2240510/6538009/524c6a5c-c454-11e4-8bfb-73d88a971bce.png)
+
 
 ## Installation
 
