@@ -19,11 +19,11 @@ These classes increase the left margin of a pane by \* columns. For example, .co
 
 Note:
 
-- Offsets inherit up to larger breakpoints unless you specify otherwise.
-- An offset will push panes that follow it in the same section over to the right also.
-- If you need to push this pane to the right and pull another pane in the same section to the left for a certain breakpoint, use Push and Pull instead.
+- Offsets **inherit up to larger breakpoints** unless you specify otherwise.
+- An **offset will push panes** that follow it in the same section over to the right also.
+- If you need to **push this pane to the right** and pull **another pane in the same section to the left** for a certain breakpoint, **use Push and Pull** instead.
 
-See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-offsetting) on Offset for more information.
+See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-offsetting) on *Offset* for more information.
 
 ## Push
 
