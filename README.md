@@ -11,7 +11,7 @@ Supports:
  
 ## Columns
 
-## Offset
+## Using Offset
 
 Move this pane to the right using .col-(xs/sm/md/lg)-offset-\* classes.
 
@@ -25,11 +25,22 @@ Note:
 
 See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-offsetting) on *Offset* for more information.
 
-## Push
+## Using Push
 
-## Pull
+Move this pane to the right using the css property: left:
 
-## Visibility
+This class increase the left css propery of a pane by \* columns. For example, .col-md-push-4 will move this pane right by four columns on the medium and large breakpoints.
+
+Note:
+
+- Push **inherits up to larger breakpoints** unless you specify otherwise.
+- A **push will not push panes** that follow it in the same section.
+
+See the [Bootstrap documentation](http://getbootstrap.com/css/#grid-column-ordering) on **Push** for more information.
+
+## Using Pull
+
+## Using Visibility
 
 Also supports sections (regions) as Bootstrap containers or just full width sections.
 
