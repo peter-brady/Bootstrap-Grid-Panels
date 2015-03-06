@@ -3,10 +3,10 @@
 Enables Bootstrap 3 column classes to be added to regions and panes in Panels.
 
 Supports:
- - col-xs-\*, col-sm-\*, col-md-*, col-lg-*
- - col-xs-offset-*, col-md-offset-*, col-md-offset-*, col-lg-offset-*
- - col-xs-push-*, col-md-push-*, col-md-push-*, col-lg-push-*
- - col-xs-pull-*, col-md-pull-*, col-md-pull-*, col-lg-pull-*
+ - col-xs-\*, col-sm-\*, col-md-\*, col-lg-\*
+ - col-xs-offset-\*, col-md-offset-\*, col-md-offset-\*, col-lg-offset-\*
+ - col-xs-push-\*, col-md-push-\*, col-md-push-\*, col-lg-push-\*
+ - col-xs-pull-\*, col-md-pull-\*, col-md-pull-\*, col-lg-pull-\*
  - hidden-xs, hidden-sm, hidden-md, hidden-lg
  
 Also supports sections (regions) as Bootstrap containers or just full width sections.
