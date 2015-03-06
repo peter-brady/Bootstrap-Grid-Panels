@@ -9,10 +9,11 @@ Supports:
  - col-xs-pull-*, col-md-pull-*, col-md-pull-*, col-lg-pull-*
  - hidden-xs, hidden-sm, hidden-md, hidden-lg
  
-Also supports sections (regions) as Bootstrap containers or
-full width.
+Also supports sections (regions) as Bootstrap containers or just full width sections.
+
 Default Bootstrap container:
 ----------------------------
+```
 <section>                       <-- Full width section (add custom classes below)
   <div class="container">       <-- Default section container (add custom classes below)
     <div class="row">           <-- Row to hold columns IE. Panels panes (add custom classes below)
@@ -20,15 +21,21 @@ Default Bootstrap container:
     </div>
   </div>    
 </section>
+```
+
 Full width section:
 -------------------
+```
 <section>                   <-- Full-width section (add custom classes below)
   <?php print $panes ?>     <-- Components as Fieldable Panels Panes
 </section>
+```
 
 ## Installation
 
-TODO: Describe the installation process
+- Ensure you have cTools, Page Manager and Panles contrib modules enabled
+- Clone this repository into your modules directory
+- Enable the module
 
 ## Usage
 
