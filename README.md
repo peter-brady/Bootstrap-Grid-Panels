@@ -33,7 +33,7 @@ Full width section:
 
 ## Installation
 
-- Ensure you have cTools, Page Manager and Panels contrib modules enabled
+- Ensure you have [http://drupal.org/project/ctools](cTools and Page Manager) and  [Panels](https://www.drupal.org/project/panels) contrib modules enabled
 - Clone this repository into your modules directory
 - Enable the **Bootstrap Grid Panels** module
 
