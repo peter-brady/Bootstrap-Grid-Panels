@@ -78,6 +78,9 @@ See the [Bootstrap documentation](http://getbootstrap.com/css/#responsive-utilit
 
 Default Bootstrap container:
 ----------------------------
+
+By default, regions panes assume the containing region is going to be a default Bootstrap section, like so.
+
 ```
 <section>                       <-- Full width section (add custom classes below)
   <div class="container">       <-- Default section container (add custom classes below)
@@ -89,9 +92,11 @@ Default Bootstrap container:
 ```
 ![section-style-settings-default](https://cloud.githubusercontent.com/assets/2240510/6538008/5247ad3c-c454-11e4-9859-7a8390d836e3.png)
 
-
 Full width section:
 -------------------
+
+You can choose **not to wrap** the rows in a container and a row by selecting **Full-width section** on the region style settings.
+
 ```
 <section>                   <-- Full-width section (add custom classes below)
   <?php print $panes ?>     <-- Components as Fieldable Panels Panes
