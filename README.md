@@ -11,6 +11,14 @@ Supports:
  
 ## Columns
 
+Select the column settings for a pane for the default Bootstrap breakpoints.
+
+You may, for instance, want to set a pane to span twelve columns for extra-small devices, six columns for small devices and larger.
+
+Not that column classes inherit up. So, if you set a pane to six colums on small, that pane will also span six columns on medium and large, as the default option is 'Inherit'.
+
+Column settings for your breakpoints can all be completely customised, though. 
+
 ![pane-style-settings-1](https://cloud.githubusercontent.com/assets/2240510/6538025/83c6e0c6-c454-11e4-83a7-f11417465d52.png)
 
 
@@ -110,3 +118,11 @@ You can choose **not to wrap** the rows in a container and a row by selecting **
 - Ensure you have [cTools and Page Manager](http://drupal.org/project/ctools) and [Panels](https://www.drupal.org/project/panels) contrib modules enabled
 - Clone this repository into your modules directory
 - Enable the **Bootstrap Grid Panels** module
+
+## Usage
+
+This module essentially just applies the Bootstrap grid classes to your Panels panes and regions. So, your theme CSS will need the **Bootstrap Grid** and **Responsive Utilities** included.
+
+If you use a Bootstrap sub-theme, Bootstrap Grid Panels will work nicely out of the box.
+
+However, if you're using LESS or SASS to compile your theme stylesheets, just ensure the Bootstrap **Grid CSS** and the Bootstrap **Responsive Utitlities** CSS is available in your themes' compiled stylesheets.
