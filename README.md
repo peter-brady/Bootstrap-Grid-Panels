@@ -119,7 +119,7 @@ You can choose **not to wrap** the rows in a container and a row by selecting **
 - Clone this repository into your modules directory
 - Enable the **Bootstrap Grid Panels** module
 
-## Usage
+## Troubleshooting
 
 This module essentially just applies the Bootstrap grid classes to your Panels panes and regions. So, your theme CSS will need the **Bootstrap Grid** and **Responsive Utilities** included.
 
