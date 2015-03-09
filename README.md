@@ -87,7 +87,7 @@ See the [Bootstrap documentation](http://getbootstrap.com/css/#responsive-utilit
 Default Bootstrap container:
 ----------------------------
 
-By default, regions panes assume the containing region is going to be a default Bootstrap section, like so.
+By default, regions panes assume the containing region is going to be a default Bootstrap row inside a container, like so.
 
 ```
 <section>                       <-- Full width section (add custom classes below)
@@ -99,6 +99,8 @@ By default, regions panes assume the containing region is going to be a default 
 </section>
 ```
 ![section-style-settings-default](https://cloud.githubusercontent.com/assets/2240510/6538008/5247ad3c-c454-11e4-9859-7a8390d836e3.png)
+
+Note: regions are rendered inside a ```<section>``` element. This is so you can apply custom classes for things like like background colours, vertical margins and paddings etc. to the full width section.
 
 Full width section:
 -------------------
