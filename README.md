@@ -1,6 +1,6 @@
-# Drupal Bootstrap Grid Panels
+# Bootstrap Grid Panels for Drupal
 
-Enables Bootstrap 3 column classes to be added to regions and panes in Panels.
+This module enables you to apply Bootstrap 3 column classes to all your Panels regions and panes.
 
 Supports:
  - col-xs-\*, col-sm-\*, col-md-\*, col-lg-\*
