@@ -105,7 +105,7 @@ Note: regions are rendered inside a ```<section>``` element. This is so you can 
 Full width section:
 -------------------
 
-You can choose **not to wrap** the rows in a container and a row by selecting **Full-width section** on the region style settings.
+You can choose **not to wrap** the panes in a container and a row by selecting **Full-width section** on the region style settings.
 
 ```
 <section>                   <-- Full-width section (add custom classes below)
